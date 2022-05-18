@@ -1,0 +1,140 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=25mm]{geometry}
+
+\usepackage[math-style=ISO,bold-style=ISO]{unicode-math}
+
+\title{OpenType Math Font Specimen}
+\author{}
+\date{}
+
+\newcommand*\diff{\mathop{}\!\symrm{d}}
+
+\newcommand{\SpecimenBlock}[2]{
+	\section*{#1 (+ #2)}
+	\begin{itemize}
+		\item Inline: $\frac 1n ∑ᵢ₌₁ⁿ xᵢ ⩾ \bigl( ∏ᵢ₌₁ⁿ xᵢ \bigr)^{\frac 1n}$, and $∬_D \bigl( \frac{∂Q}{∂x} - \frac{∂P}{∂y} \bigr) \diff x \diff y = ∳_{∂D} ( P \diff x + Q \diff y )$.
+		\item Display: \[ \frac 1n ∑ᵢ₌₁ⁿ xᵢ ⩾ \left( ∏ᵢ₌₁ⁿ xᵢ \right)^{\frac 1n} \quad \text{and} \quad ∬_D \Bigl( \frac{∂Q}{∂x} - \frac{∂P}{∂y} \Bigr) \diff x \diff y = ∳_{∂D} ( P \diff x + Q \diff y ) \text . \]
+		\item ISO typesetting: $\symup e ^{\symup i\symup π} + 1 = 0$, and $𝐚⋅(𝐛×𝐜) = 𝐛⋅(𝐜×𝐚) = 𝐜⋅(𝐚×𝐛)$.
+	\end{itemize}
+}
+
+\begin{document}
+
+\maketitle
+
+\setmainfont{TeXGyrePagella-Regular}
+\setmathfont{Asana-Math}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{Asana Math}{TeX Gyre Pagella}
+
+\setmainfont{Erewhon-Regular}
+\setmathfont{Erewhon-Math}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{Erewhon Math}{erewhon}
+
+\setmainfont{FiraSans-Regular}[BoldFont={FiraSans-Bold}]
+\setmathfont{FiraMath-Regular}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{Fira Math}{Fira Sans}
+
+\setmainfont{EBGaramond-Regular}
+\setmathfont{Garamond-Math}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{Garamond-Math}{EB Garamond}
+
+\setmainfont{GFSNeohellenic-Regular}
+\setmathfont{GFSNeohellenicMath}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{GFS Neohellenic Math}{GFS Neohellenic}
+
+\setmainfont{KpRoman-Light}
+\setmathfont{KpMath-Light}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{KpMath Light}{KpRoman}
+
+\setmainfont{KpRoman-Regular}
+\setmathfont{KpMath-Regular}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{KpMath Regular}{KpRoman}
+
+\setmainfont{KpRoman-Semibold}
+\setmathfont{KpMath-Semibold}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{KpMath Semibold}{KpRoman}
+
+\setmainfont{KpRoman-Bold}
+\setmathfont{KpMath-Bold}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{KpMath Bold}{KpRoman}
+
+\setmainfont{KpSans-Regular}
+\setmathfont{KpMath-Sans}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{KpMath Sans}{KpSans}
+
+\setmainfont{LibertinusSerif-Regular}
+\setmathfont{LibertinusMath-Regular}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{Libertinus Math}{Libertinus Serif}
+
+\setmainfont{STIX-Regular}
+\setmathfont{STIXMath-Regular}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{STIX Math}{STIX}
+
+\setmainfont{STIXTwoText-Regular}
+\setmathfont{STIXTwoMath-Regular}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{STIX Two Math}{STIX Two Text}
+
+\setmainfont{XITS-Regular}
+\setmathfont{XITSMath-Regular}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{XTIS Math Regular}{XITS}
+
+\setmainfont{XITS-Bold}
+\setmathfont{XITSMath-Bold}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{XTIS Math Bold}{XITS}
+
+\setmainfont{LMRoman10-Regular}
+\setmathfont{latinmodern-math}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{Latin Modern Math}{Latin Modern Roman}
+
+\setmainfont{NewCM10-Regular}
+\setmathfont{NewCMMath-Regular}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{NewComputerModernMath Regular}{NewComputerModern10}
+
+\setmainfont{NewCM10-Book}
+\setmathfont{NewCMMath-Book}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{NewComputerModernMath Book}{NewComputerModern10}
+
+\setmainfont{TeXGyreBonum-Regular}
+\setmathfont{texgyrebonum-math}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{TeX Gyre Bonum Math}{TeX Gyre Bonum}
+
+\setmainfont{DejaVuSerif}
+\setmathfont{texgyredejavu-math}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{TeX Gyre DejaVu Math}{DejaVu Serif}
+
+\setmainfont{TeXGyrePagella-Regular}
+\setmathfont{texgyrepagella-math}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{TeX Gyre Pagella Math}{TeX Gyre Pagella}
+
+\setmainfont{TeXGyreSchola-Regular}
+\setmathfont{texgyreschola-math}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{TeX Gyre Schola Math}{TeX Gyre Schola}
+
+\setmainfont{TeXGyreTermes-Regular}
+\setmathfont{texgyretermes-math}[Path=../font/,Extension=.ttf]
+
+\SpecimenBlock{TeX Gyre Termes Math}{TeX Gyre Termes}
+
+\end{document}
